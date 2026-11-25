@@ -33,7 +33,7 @@ namespace AlgApp
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            double result = 0;
             double f = 0;
 
             try
@@ -62,24 +62,21 @@ namespace AlgApp
 
 
 
-                
 
-                //if (x >= 1 & x <= 5)
-                //{
-                //    Console.WriteLine("Отрицательное число");
-                //}
-                //else if (number == 0)
-                //{
-                //    Console.WriteLine("Нулевое число");
-                //}
-                //else if (number > 0)
-                //{
-                //    Console.WriteLine("Положительное число");
-                //}
-                //else
-                //{
-                //    Console.WriteLine("Другое число");
-                //}
+
+                if (x >= 1 & x <= 5)
+                {
+                    result = Math.Pow(f, 2) + Math.Atan(f);
+                }
+                else if (y > x)
+                {
+                    result = Math.Pow(y - f, 2) + Math.Atan(f);
+                }
+                else
+                {
+                    result = Math.Pow(y + f, 3) + 0.5;
+                }
+                this.textBox5.Text = result.ToString("F4"); // Форматирование до 4 знаков
 
 
             }
